@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Chroak",
-  "description": "6.857 Final Project",
-  "version": "1.4",
+  "name": "Team 3 ",
+  "description": "Research Project",
+  "version": "1",
 
   "chrome_url_overrides": {
     "newtab": "app.html"
@@ -21,7 +21,7 @@
   "browser_action": {
     "default_icon": "ghost.png",
     "default_popup": "popup.html",
-    "default_title": "6.857 Final Project: Chroak"
+    "default_title": "Team 3"
   },
 
  "commands": {
@@ -45,7 +45,7 @@
   "oauth2": {
     "client_id": "499742986420-7sscg2hqonqie2ma7u352vvr5k50j2v2.apps.googleusercontent.com",
     "scopes": [
-      "https://daniman.me"
+      "https://github.com/nahara1/Team3_ResearchProject"
     ]
   }, 
 
