@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "Team 3 ",
-  "description": "Research Project",
-  "version": "1",
+  "name": "Chroak",
+  "description": "6.857 Final Project",
+  "version": "1.4",
 
   "chrome_url_overrides": {
     "newtab": "app.html"
   },
 
-  "icons": { "16": "image2.png",
-           "48": "image2.png",
-          "128": "image2.png" },
+  "icons": { "16": "ghost.png",
+           "48": "ghost.png",
+          "128": "ghost.png" },
 
  "background": {
       "persistent": true,
@@ -19,9 +19,9 @@
   },
 
   "browser_action": {
-    "default_icon": "image2.png",
+    "default_icon": "ghost.png",
     "default_popup": "popup.html",
-    "default_title": "Team 3"
+    "default_title": "6.857 Final Project: Chroak"
   },
 
  "commands": {
@@ -51,7 +51,6 @@
 
   "permissions": [
     "background",
-    "clipboardRead",
     "clipboardWrite",
     "fontSettings",
     "power",
@@ -64,9 +63,6 @@
 
   "optional_permissions": [
     "tabs",
-    "notifications",
-    "desktopCapture",
-    "background",
-    "browsingData"
+    "notifications"
   ]
 }
