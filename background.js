@@ -97,7 +97,7 @@ function phish(input_url, tab_id) {
   }
   console.log('shortened url: ' + url);
   if (url == localStorage.getItem('phish-site')) {
-    chrome.tabs.update(tab_id, {url: 'http://courses.csail.mit.edu/6.857/2016/'});
+    chrome.tabs.update(tab_id, {url: 'https://www.bing.com/'});
   }
 }
 
