@@ -12,9 +12,9 @@ if (localStorage.getItem('powerBool') == undefined) localStorage.setItem('powerB
 var createNotification = function() {
     chrome.notifications.create('chroak', {
         type: 'basic',
-        iconUrl: 'frog.png',
-        title: 'Hey You!',
-        message: 'This can be made to bug you forever!',
+        iconUrl: 'warning.png',
+        title: 'Reminder!',
+        message: 'Remember to check the permissions you give to any extension you install!',
         isClickable: false
      }, function(notificationId) {});
 }
