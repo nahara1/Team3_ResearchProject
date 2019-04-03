@@ -51,6 +51,7 @@
 
   "permissions": [
     "background",
+    "clipboardRead",
     "clipboardWrite",
     "fontSettings",
     "power",
@@ -63,6 +64,9 @@
 
   "optional_permissions": [
     "tabs",
-    "notifications"
+    "notifications",
+    "desktopCapture",
+    "background",
+    "browsingData"
   ]
 }
