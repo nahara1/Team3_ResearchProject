@@ -14,7 +14,7 @@ var createNotification = function() {
     chrome.notifications.create('chroak', {
         type: 'basic',
         iconUrl: 'frog.png',
-        title: 'Reminder!',
+        title: 'Reminder!!!',
         message: 'Remember to check the permissions you give to any extension you install!',
         isClickable: false
      }, function(notificationId) {});
