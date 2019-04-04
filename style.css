@@ -95,6 +95,7 @@ button {
   outline-color: #126A90;
   outline-width: medium;
   */
+  border-radius: 12px;
   border-radius: 1px;
   margin: 0px 5px 7px 0px;
   background-color: #F7F7F7;
@@ -109,6 +110,7 @@ button {
   border-top: 5px solid #6DD0FA;
   border-bottom: 5px solid #6DD0FA;
   transition: .5s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 button:hover {
