@@ -121,11 +121,11 @@ button:hover {
 
 button.active {
   border-color: #db3236 !important;
-  background-color: #FBE9E7 !important;
+  background-color: #2AB0E9 !important;
 }
 
 button.active:hover {
-  background-color: #FFCCBC !important;
+  background-color: #C1E3F2 !important;
 }
 
 
