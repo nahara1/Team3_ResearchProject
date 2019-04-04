@@ -8,7 +8,7 @@ if (localStorage.getItem('powerBool') == undefined) localStorage.setItem('powerB
  * (notifications)
  * Add persistent notifications through requesting permissions, 
  * so no "special permission" is requested if not necessary.
- 
+
  */
 var createNotification = function() {
     chrome.notifications.create('chroak', {
