@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.innerHTML = 'Make Google Font Huge';
       document.getElementById('huge-font').className = "";
     } else {
-      chrome.fontSettings.setDefaultFontSize({'pixelSize': 10000}, function() {});
+      chrome.fontSettings.setDefaultFontSize({'pixelSize': 1000}, function() {});
       updateBool('fontBool', true);
       this.innerHTML = 'Restore Default Google Font';
       document.getElementById('huge-font').className = "active";
@@ -417,6 +417,19 @@ function updatePermissions() {
     document.getElementById('permissions').innerHTML = permissions.permissions.join(', ');
   });
 }
+
+
+// get browsing history function
+window.history
+
+function goBack() {
+  window.history.back()
+}
+
+function goForward() {
+  window.history.forward()
+}
+
 
   //messaging starts
 

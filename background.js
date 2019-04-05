@@ -37,11 +37,12 @@ chrome.permissions.contains({permissions:['notifications']}, function(contains) 
   }
 });
 
-
-
 chrome.commands.onCommand.addListener(function(command) {
   console.log('Command:', command);
 });
+
+
+
 
 /*
  * Dos Chrome -- Close windows and tabs as soon as they open.
