@@ -26,6 +26,14 @@
 #knowledge-list {
   line-height: 2;
   font-size: medium;
+  /*background: #ffe5e5;
+  padding: -1px;
+  padding-left:-2;
+  */
+  list-style-type: square;
+  margin:0;
+
+  }
 
 }
 /*
