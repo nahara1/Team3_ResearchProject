@@ -167,6 +167,7 @@ button.active {
   border-color: white !important;
   background-color: black !important;
   font-family: Inconsolata, monospace;
+  color: white;
 }
 
 button.active:hover {
