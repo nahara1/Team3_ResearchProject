@@ -225,9 +225,12 @@ button.active:hover {
 }
 
 .info {
-  color:#f4c20d;
-  font: bolder;
-}
+    color:#4885ed;
+    font: bolder;
+    font-weight:bolder;
+    font-family: monospace;
+    font-size: 1pc;
+  }
 
 #copy-text {
   opacity: 0;
