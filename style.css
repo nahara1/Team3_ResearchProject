@@ -47,9 +47,11 @@ body {
   background-color: #fff;
   font-family: 'Inconsolata', monospace;
   font-size: 15px;
+  color: white;
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: #1d1919;
 }
 
 a {
