@@ -138,16 +138,21 @@ button {
   }
 
 button:hover {
-  background-color: #C1E3F2;
-  transition: .5s;
+   border-left: 5px solid #f4c20d;
+   border-right: 5px solid #3cba54;
+   border-top: 5px solid #d61442;
+   border-bottom: 5px solid #6DD0FA;
+   transition: .5s;
 }
+
 #phish, #toggle-notifications {
-  border-color: #6DD0FA;
+  border-color: ;
 }
 
 button.active {
-  border-color: #db3236 !important;
-  background-color: #2AB0E9 !important;
+  border-color: white !important;
+  background-color: black !important;
+  font-family: Inconsolata, monospace;
 }
 
 button.active:hover {
@@ -167,8 +172,8 @@ button.active:hover {
 }
 
 #phish:hover ~ #phish-site-container {
-  background-color: #FFCCBC;
-  border-color: #FFCCBC;
+  background-color: black;
+  border-color: white;
   transition: .5s;
 }
 
