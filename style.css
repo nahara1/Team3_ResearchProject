@@ -226,8 +226,7 @@ button.active:hover {
 
 .info {
     color:#4885ed;
-    font: bolder;
-    font-weight:bolder;
+    font-weight: 400;
     font-family: monospace;
     font-size: 1pc;
   }
