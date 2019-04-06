@@ -36,17 +36,17 @@
   }
 
 }
-/*
+
 .alerts {
   font-size: large;
   border: black;
   border-left: black;
   background-color: black;
   text-decoration:underline;
-  text-decoration-color: white;
+  color: white;
 
 }
-*/
+
 
 * {
   box-sizing: border-box;
