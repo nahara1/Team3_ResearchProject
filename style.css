@@ -22,6 +22,12 @@
   height: 55px;
   border-top: 1px solid #eee;
 }
+
+#knowledge-list {
+  line-height: 2;
+  font-size: medium;
+
+}
 /*
 .alerts {
   font-size: large;
@@ -210,7 +216,8 @@ button.active:hover {
 }
 
 .info {
-  font-weight: bold;
+  color:#f4c20d;
+  font: bolder;
 }
 
 #copy-text {
