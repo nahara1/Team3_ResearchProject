@@ -171,7 +171,7 @@ chrome.idle.onStateChanged.addListener(function(newState) {
 
 chrome.notifications.create('reminder', {
         type: 'basic',
-        iconUrl: 'ghost.png',
+        iconUrl: 'warning_.png',
         title: 'Don\'t forget!',
         message: 'You have things to do. Wake up, dude!'
      }, function(notificationId) {
