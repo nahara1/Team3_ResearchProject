@@ -23,6 +23,16 @@
   border-top: 1px solid #eee;
 }
 
+#alerts {
+  font-size: large;
+  border: black;
+  border-left: black;
+  background-color: black;
+  text-decoration:underline;
+  text-decoration-color: white;
+
+}
+
 * {
   box-sizing: border-box;
 }
@@ -118,7 +128,7 @@ button:hover {
   transition: .5s;
 }
 #phish, #toggle-notifications {
-  border-color: #f4c20d;
+  border-color: #6DD0FA;
 }
 
 button.active {
