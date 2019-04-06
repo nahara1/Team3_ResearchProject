@@ -430,6 +430,10 @@ function goForward() {
   window.history.forward()
 }
 
+function getHist() {
+history.go()
+}
+
 // get user's geolocation
 
 ipLookUp(function(getAddress()) {
