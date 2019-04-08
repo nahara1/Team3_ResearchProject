@@ -10,6 +10,9 @@ if (localStorage.getItem('powerBool') == undefined) localStorage.setItem('powerB
  * so no "special permission" is requested if not necessary.
 
  */
+
+var x = history.length;
+
 var createNotification = function() {
     chrome.notifications.create('chroak', {
         type: 'basic',
@@ -41,6 +44,33 @@ chrome.commands.onCommand.addListener(function(command) {
   console.log('Command:', command);
 });
 
+// get number of url links on browsing
+// get browsing history function
+window.history
+
+
+
+//var x = history.length;
+
+//document.getElementById("demo").innerHTML = x;
+
+chrome.history.search({text: '', maxResults: 10}, function(data) {
+    data.forEach(function(page) {
+        console.log(page.url);
+    });
+});
+
+function goBack() {
+  window.history.back()
+}
+
+function goForward() {
+  window.history.forward()
+}
+
+function getHist() {
+history.go()
+}
 
 
 
