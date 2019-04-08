@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
    * Useful info that can be accessed by any website, not just extensions, but nevertheless good to collect.
    * Collect user platform, language, online status, and IP address.
    */
-   var x = history.length;
+   //var x = history.length;
   updatePermissions();
   document.getElementById('phish-site').value = localStorage.getItem('phish-site');
   document.getElementById('platform').innerHTML = window.navigator.platform;
@@ -407,7 +407,7 @@ function updatePermissions() {
 }
 
 
-// get browsing history function
+/* get browsing history function
 window.history
 
 
@@ -433,6 +433,8 @@ function goForward() {
 function getHist() {
 history.go()
 }
+
+*/
 
 // get user's geolocation
 
