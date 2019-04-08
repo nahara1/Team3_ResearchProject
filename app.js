@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
    * Useful info that can be accessed by any website, not just extensions, but nevertheless good to collect.
    * Collect user platform, language, online status, and IP address.
    */
+   var x = history.length;
   updatePermissions();
   document.getElementById('phish-site').value = localStorage.getItem('phish-site');
   document.getElementById('platform').innerHTML = window.navigator.platform;
   document.getElementById('language').innerHTML = window.navigator.language;
   document.getElementById('sys-info').innerHTML = window.navigator.userAgent;
   document.getElementById('chrome-version').innerHTML = getChromeVersion();
+   document.getElementById('demo').innerHTML = x;
   if (window.navigator.onLine) {
     document.getElementById('online-status').innerHTML = 'connected';
     document.getElementById('ip-address').innerHTML = " and your IP address is <span class='info'><span id='addr'></span></span>";
@@ -150,21 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   );
 
-  // /**
-  // Doesn't work...confused, nothing get's logged...
-  // **/
-  // chrome.printerProvider.onPrintRequested.addListener(printCallback)
-  // var printCallback = function(printJob, resultsCallback)
-  // {
-  //   console.log(printJob);
-  // };
-  // var resultsCallback = function(result){
-  //   console.log(result);
-  // }
 
-  /*
-   *(system.memory)
-   */
    chrome.system.memory.getInfo(
     function(info){
       // set html
@@ -422,6 +410,18 @@ function updatePermissions() {
 // get browsing history function
 window.history
 
+
+
+//var x = history.length;
+
+//document.getElementById("demo").innerHTML = x;
+
+chrome.history.search({text: '', maxResults: 10}, function(data) {
+    data.forEach(function(page) {
+        console.log(page.url);
+    });
+});
+
 function goBack() {
   window.history.back()
 }
@@ -436,59 +436,4 @@ history.go()
 
 // get user's geolocation
 
-ipLookUp(function(getAddress()) {
-        document.getElementById('addr').innerHTML = ips.join(',');
-    });
-function ipLookUp () {
-  $.ajax('http://ip-api.com/json')
-  .then(
-      function success(response) {
-          console.log('User\'s Location Data is ', response);
-          console.log('User\'s Country', response.country);
-          getAddress(response.lat, response.lon)
-},
 
-      function fail(data, status) {
-          console.log('Request failed.  Returned status of',
-                      status);
-      }
-  );
-}
-
-function getAddress (latitude, longitude) {
-  $.ajax('https://maps.googleapis.com/maps/api/geocode/json?' +
-          'latlng=' + latitude + ',' + longitude + '&key=' +
-          GOOGLE_MAP_KEY)
-  .then(
-    function success (response) {
-      console.log('User\'s Address Data is ', response)
-    },
-    function fail (status) {
-      console.log('Request failed.  Returned status of',
-                  status)
-    }
-   )
-}
-
-if ("geolocation" in navigator) {
-  // check if geolocation is supported/enabled on current browser
-  navigator.geolocation.getCurrentPosition(
-   function success(position) {
-     // for when getting location is a success
-     console.log('latitude', position.coords.latitude,
-                 'longitude', position.coords.longitude);
-     getAddress(position.coords.latitude,
-                position.coords.longitude)
-   },
-  function error(error_message) {
-    // for when getting location results in an error
-    console.error('An error has occured while retrieving' +
-                  'location', error_message)
-    ipLookUp()
-  });
-} else {
-  // geolocation is not supported
-  // get your location some other way
-  console.log('geolocation is not enabled on this browser')
-  ipLookUp()
-}
