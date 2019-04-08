@@ -12,14 +12,12 @@
   <body>
 
     <div class="app-container">
-
       <div id="header">
-        <h1>Well, <span class="b">h</span><span class="r">e</span><span class="y">l</span><span class="b">l</span><span class="g">o</span> there.</h1>
-        <div>This is <a href="https://chrome.google.com/webstore/detail/chroak/mncdbnbagganllmlplhgcaooolgjnfio">Chroak</a>, a Chrome Extension that teaches users to be more wary of permission lending and points out loopholes in Chrome's security policy for extensions.</div>
+        <h1><span class="b">C</span><span class="r">h</span><span class="y">r</span><span class="b">o</span><span class="g">m</span><span class="r">e</span> Extension Vulnerabilities</h1>
+        <div>Browser Extensions have and can get permission to access much of your device and browsing activities.</div>
       </div>
-
-      <div>
-        <h2>Here are some things an extension might do:</h2>
+      <div class="column">
+        <h2>Extensions can:</h2>
         <div>
           <button id="huge-font">Make Google Font Huge</button>
           <button id="power-on">Run Down Your Power</button>
@@ -35,11 +33,16 @@
               <input id="phish-site" placeholder="[name].[tld]: google.com" type="text">
             </div>
         </div>
-        <div id="alerts"></div>
       </div>
+        <div class="column1">
+          <h2>Permissions Extensions can have:</h2>
+          <div id="permissions"></div>
+        </div>
+        <div id="alerts"></div>
+
 <!--- add a class to change layout --->
       <div>
-        <h2 id="knowledge">Here are some things your extension knows:</h2>
+        <h2 id="knowledge">Extensions know:</h2>
         <ul id="knowledge-list">
           <li>You are currently <span id="online-status" class="info"></span> to the internet<span id="ip-address"></span>.</li>
           <li>You are running on a <span id="platform" class="info"></span> platform in the language <span id="language" class="info"></span>.</li>
@@ -50,13 +53,11 @@
           <li>You have <span id="num-devices" class="info"></span> other device(s) connected to Chrome. <span id="devices" class="info"></span></li>
           <li>You have <span id="capacity" class="info"></span> total bytes of physical memory capacity and <span id="available-capacity" class="info"></span> bytes of available physical memory capacity remaining.</li>
           <li>You are using <span id="numStorageDevices" class="info"></span> storage devices. Their names are <span id="nameStorageDevices" class="info"></span> and they are of the types <span id="typeStorageDevices" class="info"></span> .</li>
+          <li>You have <span id="demo" class="info"></span> website URLs in your browsing history. </li>
         </ul>
       </div>
 
-      <div>
-        <h2>Enabled Permissions:</h2>
-        <div id="permissions"></div>
-      </div>
+
 
     </div>
 
